@@ -1,1 +1,40 @@
-02.html
+ <!DOCTYPE html>
+<html lang="es">
+  <meta charset="utf-8" />
+ <title>z-index</title>
+ <style>
+	 html, body { margin: 0; }
+	 .elem {
+		 width: 200px;
+		 height: 200px;
+	 }
+
+	 .square_rojo {
+	 	background-color: rgba(255, 0, 0, .5);
+	 	z-index: 0;
+	 }
+
+	 .square_verde {
+		background-color: rgba(0, 255, 0, .5);
+	 	left: 25px;
+	 	position: absolute;
+	 	top: 25px;
+	 	z-index: -1;
+	 }
+
+	 .square_azul {
+	 background-color: rgba(0, 0, 255, .5);
+	 left: 50px;
+	 position: absolute;
+	 top: 50px;
+	 z-index: -2;
+
+	 }
+ </style>
+ </head>
+ <body>
+	 <div class="elem square_rojo"></div>
+	 <div class="elem square_verde"></div>
+	 <div class="elem square_azul"></div>
+ </body>
+ </html>
