@@ -20,20 +20,23 @@
 			background-color: yellow;
 		}
 
-		div.d{
+		div.din{
 			background-color: red;
-			height: 25px;
+			height: 100px;
+			width: 200px;
+			position: absolute;
+			z-index: -1;
 
 
 		}
 
-		.uno {
-			width: 25px;
+		.blanco1{
+			background-color: white;
+			position:relative;
+			z-index: 1; 
 		}
 
-		.dos{
-			width: 50;
-		}
+		
 	</style>
 </head>
 <body>
@@ -43,11 +46,9 @@
 	<div class="e_rojo"></div>
 	<p>España</p>
 
-	<div>
-		<div class="d uno"></div>
-		<div class="d dos"></div>
-		<div class="d uno"></div>
-		<div class="d dos"></div>
+	<div class=din>
+		<div class="blanco1"></div>
+		<div class="blanco2"></div>
 	</div>
 
 </body>
